@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'popppins', sans-serif;
+  font-family: 'Popppins', sans-serif;
   font-size: 16px;
   background: var(--color-primary);
   color: white;
@@ -28,6 +28,9 @@ ul {
   list-style: none;
 }
 
+.nav-bar ul {
+  display: flex;
+}
 .main-header {
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.8);
@@ -254,4 +257,14 @@ section h2 {
 
 .details-bottom span {
   color: var(--color-secondary);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h4 {
+  font-weight: bold;
 }
