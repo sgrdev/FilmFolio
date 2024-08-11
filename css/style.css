@@ -26,7 +26,6 @@ a {
 
 ul {
   list-style: none;
-  display: flex;
 }
 
 .main-header {
@@ -113,6 +112,7 @@ section h2 {
   color: white;
   cursor: pointer;
   background: transparent;
+  font-size: 16px;
   transition: all;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
@@ -209,4 +209,49 @@ section h2 {
 
 .page-counter {
   margin-top: 10px;
+}
+
+.movie-details .container {
+  align-items: start;
+}
+
+.detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.detail-top p {
+  margin: 20px 0;
+}
+
+.detail-top img {
+  width: 400px;
+  height: 100%;
+  margin-right: 60px;
+  object-fit: cover;
+}
+.back {
+  margin-top: 30px;
+}
+
+.detail-top ul {
+  display: block;
+}
+
+.detail-top a {
+  margin-top: 20px;
+}
+
+.details-bottom li {
+  margin: 15px 0px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid white;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.details-bottom span {
+  color: var(--color-secondary);
 }
