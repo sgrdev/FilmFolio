@@ -152,12 +152,12 @@ section h2 {
   color: white;
 }
 
-.container h2 {
+.container-movies h2 {
   text-align: center;
   margin: 20px 0px;
   text-transform: uppercase;
 }
-.container {
+.container-movies {
   margin: 0px 30px;
   padding: 0px 20px;
   display: flex;
@@ -171,9 +171,12 @@ section h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
+  flex: 1 1 250px;
+  min-width: 250px;
   width: 23%;
   background: #04376b;
   border: 5px solid #04376b;
@@ -181,7 +184,7 @@ section h2 {
   margin-top: 15px;
 }
 
-.card-img img {
+.card img {
   width: 100%;
   height: auto;
 }
