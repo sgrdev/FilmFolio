@@ -33,6 +33,13 @@ ul {
   list-style: none;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .nav-bar ul {
   display: flex;
 }
@@ -174,6 +181,15 @@ section h2 {
   gap: 20px;
 }
 
+#popular-shows {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
   flex: 1 1 250px;
   min-width: 250px;
@@ -215,7 +231,6 @@ section h2 {
 
 .pagination {
   margin-top: 20px;
-  margin-left: 50px;
 }
 
 .page-counter {
@@ -265,12 +280,6 @@ section h2 {
 
 .details-bottom span {
   color: var(--color-secondary);
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 h4 {

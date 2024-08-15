@@ -15,76 +15,68 @@
     <title>FilmFolio</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <div class="nav-bar">
-          <div class="logo"><a href="/">FilmFolio</a></div>
-          <nav>
-            <ul>
-              <li>
-                <a class="nav-link" href="/">Movies</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/shows.html">TV Shows</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <section class="now-playing">
-        <h2>Now Playing</h2>
-        <div class="hero-img"></div>
-      </section>
-
-      <section class="search">
-        <div class="container">
-          <form action="/search.html" class="search-form">
-            <div class="search-radio">
-              <input
-                type="radio"
-                id="movie"
-                name="type"
-                value="movie"
-                checked
-              />
-              <label for="movies">Movies</label>
-              <input type="radio" id="tv" name="type" value="tv" />
-              <label for="tv">Tv Shows</label>
-            </div>
-            <div class="search-flex">
-              <input
-                type="text"
-                name="search-term"
-                id="search-term"
-                placeholder="Enter search term"
-              />
-              <button class="btn" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <div class="container-movies">
-        <h2>Popular movies</h2>
-        <div id="popular-movies"></div>
+    <header class="main-header">
+      <div class="nav-bar">
+        <div class="logo"><a href="/">FilmFolio</a></div>
+        <nav>
+          <ul>
+            <li>
+              <a class="nav-link" href="/">Movies</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/shows.html">TV Shows</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <footer class="main-footer">
-        <div class="footer-container">
-          <div class="logo">
-            <span>FilmFolio</span>
-          </div>
+    <section class="now-playing">
+      <h2>Now Playing</h2>
+      <div class="hero-img"></div>
+    </section>
 
-          <div class="social-link">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <section class="search">
+      <div class="container">
+        <form action="/search.html" class="search-form">
+          <div class="search-radio">
+            <input type="radio" id="movie" name="type" value="movie" checked />
+            <label for="movies">Movies</label>
+            <input type="radio" id="tv" name="type" value="tv" />
+            <label for="tv">Tv Shows</label>
           </div>
-        </div>
-      </footer>
+          <div class="search-flex">
+            <input
+              type="text"
+              name="search-term"
+              id="search-term"
+              placeholder="Enter search term"
+            />
+            <button class="btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="container-movies">
+      <h2>Popular movies</h2>
+      <div id="popular-movies"></div>
     </div>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="logo">
+          <span>FilmFolio</span>
+        </div>
+
+        <div class="social-link">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
