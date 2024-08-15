@@ -253,11 +253,6 @@ section h2 {
   margin-top: 10px;
 }
 
-.movie-detail {
-  display: flex;
-  justify-content: center;
-}
-
 .detail-top {
   display: flex;
   justify-content: space-between;
@@ -276,6 +271,7 @@ section h2 {
   margin-right: 60px;
   object-fit: cover;
 }
+
 .back {
   margin-top: 30px;
 }
