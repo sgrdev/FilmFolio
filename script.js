@@ -224,13 +224,61 @@ async function search() {
   global.search.term = urlParams.get('search-term');
 
   if (global.search.term !== '' && global.search.term !== null) {
-    const results = await searchAPIData();
-    console.log(results);
+    const { results, total_pages, page } = await searchAPIData();
+
+    if (results.length === 0) {
+      showAlert('No results found');
+      return;
+    }
+    displaySearchResults(results);
+
+    document.querySelector('#search-term').value = '';
   } else {
     showAlert('Please enter a search term');
   }
 }
 
+function displaySearchResults(results) {
+  results.forEach((result) => {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.innerHTML = `
+    
+            <a href="${global.search.type}-details.html?id=${result.id}">
+              ${
+                result.poster_path
+                  ? `<img src="https://image.tmdb.org/t/p/w500/${
+                      result.poster_path
+                    }" alt="${
+                      global.search.type === 'movie'
+                        ? result.title
+                        : result.name
+                    }" />`
+                  : `<img src="img/no-image.jpg" alt="${
+                      global.search.type === 'movie'
+                        ? result.title
+                        : result.name
+                    }" />`
+              }
+              <div class="card-body">
+                <h5 class="card-title">${
+                  global.search.type === 'movie' ? result.title : result.name
+                }</h5>
+                <p class="card-text">
+                  <small class="text-muted">Release: ${
+                    global.search.type === 'movie'
+                      ? result.release_date
+                      : result.first_air_date
+                  }
+                  </small>
+                </p>
+              </div>
+            </a>
+          `;
+
+    document.querySelector('#search-results').appendChild(div);
+  });
+}
 async function displaySlider() {
   const { results } = await fetchAPIData('movie/now_playing');
 

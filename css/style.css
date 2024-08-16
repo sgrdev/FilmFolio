@@ -199,6 +199,15 @@ section h2 {
   gap: 20px;
 }
 
+#search-results {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
   flex: 1 1 250px;
   min-width: 250px;
@@ -211,11 +220,11 @@ section h2 {
 
 .card img {
   width: 100%;
-  height: auto;
 }
 
 .card-body {
-  padding: 5px 5px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .main-footer {
@@ -327,16 +336,15 @@ h4 {
 }
 
 .alert {
-  background: red;
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
-.alert-success {
+.success {
   background-color: green;
 }
 
-.alert-error {
+.error {
   background: red;
 }
